@@ -1,5 +1,13 @@
 package demo.extthr;
 
+/**
+ * This class demonstrate definition of task to be run simultaneously using 
+ * extends Thread.
+ *
+ * 
+ * @author emalianakasmuri
+ *
+ */
 public class StatementPrinter extends Thread {
 
 	/**
@@ -16,6 +24,7 @@ public class StatementPrinter extends Thread {
 	@Override
 	public void run() {
 
+		// Execute task to print statements
 		printStatement();
 
 	}
