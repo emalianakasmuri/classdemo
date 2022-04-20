@@ -1,7 +1,8 @@
 package demo.naming;
 
 /**
- * This class demonstrate name of thread objects
+ * This class demonstrate two approaches to name the threads.
+ * 
  * @author emalianakasmuri
  *
  */
@@ -13,12 +14,14 @@ public class MultiPrinterApp {
 		Runnable numberPrinter1 = new NumberPrinter();
 		Runnable numberPrinter2 = new NumberPrinter();
 		
-		// Create objects of thread with name
+		// Approach 1: Name the thread using constructor
 		Thread printerThread1 = new Thread(numberPrinter1, "printerThread1");
+		
+		// Approach 2: Name the thread using setName( )
 		Thread printerThread2 = new Thread(numberPrinter2);
 		printerThread2.setName("printerThread2");
 		
-		// Execiute thread
+		// Execute thread
 		printerThread2.start();
 		printerThread1.start();
 
