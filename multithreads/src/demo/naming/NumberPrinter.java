@@ -30,6 +30,8 @@ public class NumberPrinter implements Runnable {
 		// Execute task
 		printNumbers( currentThread.getName());
 		
+		System.out.println("End of execution from " + currentThread);
+		
 	}
 }
 
