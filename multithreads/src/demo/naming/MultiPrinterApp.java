@@ -24,6 +24,8 @@ public class MultiPrinterApp {
 		// Execute thread
 		printerThread2.start();
 		printerThread1.start();
+		
+		System.out.println("Program ends");
 
 	}
 
